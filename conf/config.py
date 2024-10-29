@@ -21,8 +21,8 @@ crackConfig = {
     "test_username": "admin",  # 测试用户名
     "test_password": "length_test",  # 测试密码
     "requests_proxies": {  # 请求代理
-        # "http": "127.0.0.1:8080",
-        # "https": "127.0.0.1:8080"
+        # "http": "127.0.0.1:59844",
+        # "https": "127.0.0.1:59844"
     },
     "fail_words": ['密码错误', '重试', '不正确', '密码有误', '不成功', '重新输入', '不存在', '登录失败', '登陆失败', '密码或安全问题错误', 'history.go',
                    'history.back',
@@ -34,7 +34,7 @@ crackConfig = {
 generatorConfig = {
     "dict_config": {
         "base_dict": {
-            "username_list": ['admin'],  # 爆破用户名字典
+            "username_list": ['admin',"user","root"],  # 爆破用户名字典
             "password_list": txt2list("password_list.txt")  # 爆破密码字典
 
         },
@@ -88,6 +88,7 @@ parserConfig = {
     "username_keyword_list": [  # 用户名参数关键字列表
         "user",
         "name",
+        "username",
         "zhanghao",
         "yonghu",
         "email",
@@ -96,6 +97,8 @@ parserConfig = {
     "password_keyword_list": [  # 密码参数关键字列表
         "pass",
         "pw",
+        "password",
+        "passwd",
         "mima"
     ],
 
@@ -111,16 +114,11 @@ parserConfig = {
     ],
 
     "login_keyword_list": [  # 检测登录页面关键字
-        "用户名",
-        "密码",
-        "login",
-        "denglu",
-        "登录",
-        "user",
-        "pass",
-        "yonghu",
-        "mima",
-        "admin",
+        "用户名", "密码", "login", "log_in", "sign_in", "signin",
+        "submit", "enter", "auth", "authenticate", "access", "session",
+        "token", "credentials", "secure", "security", "verification",
+        "verify", "validate", "validation", "denglu", "登录", "user",
+        "pass", "yonghu", "mima", "admin"
     ],
 
 }
