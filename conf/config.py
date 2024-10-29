@@ -24,12 +24,14 @@ crackConfig = {
         # "http": "127.0.0.1:59844",
         # "https": "127.0.0.1:59844"
     },
-    "fail_words": ['密码错误', '重试', '不正确', '密码有误', '不成功', '重新输入', '不存在', '登录失败', '登陆失败', '密码或安全问题错误', 'history.go',
-                   'history.back',
-                   '已被锁定', '安全拦截', '还可以尝试', '无效', '攻击行为', '创宇盾', 'http://zhuji.360.cn/guard/firewall/stopattack.html',
-                   'D盾_拦截提示', '用户不存在',
-                   '非法', '百度云加速', '安全威胁', '防火墙', '黑客', '不合法', 'Denied', '尝试次数',
-                   'http://safe.webscan.360.cn/stopattack.html', "Illegal operation", "服务器安全狗防护验证页面"]  # 黑名单关键字
+    "fail_words": ['密码错误', '重试', '不正确', '密码有误', '不成功', '重新输入', '不存在', '登录失败', '登陆失败',
+        '密码或安全问题错误', 'history.go', 'history.back', '已被锁定', '安全拦截', '还可以尝试', '无效',
+        '攻击行为', '创宇盾', 'http://zhuji.360.cn/guard/firewall/stopattack.html', 'D盾_拦截提示', '用户不存在',
+        '非法', '百度云加速', '安全威胁', '防火墙', '黑客', '不合法', 'Denied', '尝试次数',
+        'http://safe.webscan.360.cn/stopattack.html', 'Illegal operation', '服务器安全狗防护验证页面',
+        'wrong password', 'invalid password', 'incorrect password', 'try again', 'access denied',
+        'account locked', 'login failed', 'login unsuccessful', 'authentication failed', 'user does not exist',
+        'incorrect username or password', 'unauthorized', 'session expired', 'invalid credentials']  # 黑名单关键字
 }
 generatorConfig = {
     "dict_config": {
