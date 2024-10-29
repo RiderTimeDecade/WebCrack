@@ -21,8 +21,8 @@ crackConfig = {
     "test_username": "admin",  # 测试用户名
     "test_password": "length_test",  # 测试密码
     "requests_proxies": {  # 请求代理
-        # "http": "127.0.0.1:59844",
-        # "https": "127.0.0.1:59844"
+        "http": "127.0.0.1:7897",
+        "https": "127.0.0.1:7897"
     },
     "fail_words": ['密码错误', '重试', '不正确', '密码有误', '不成功', '重新输入', '不存在', '登录失败', '登陆失败',
         '密码或安全问题错误', 'history.go', 'history.back', '已被锁定', '安全拦截', '还可以尝试', '无效',
